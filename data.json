@@ -1,0 +1,465 @@
+{
+  "title": "Espresso Developer Tour",
+  "description": "A modular roadmap to help developers explore Espresso\u2019s core features and real-world applications.",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "What is Espresso?",
+      "summary": "Espresso is a modular infrastructure layer that enables fast confirmations, pluggable sequencing, and composable data availability for rollups.",
+      "features": [
+        "HotShot-powered global confirmations (~10s finality)",
+        "Optional decentralized sequencing",
+        "Flexible data availability integration"
+      ],
+      "popup": {
+        "title": "Modular by Design",
+        "content": "Espresso isn't a rollup. It's what powers your rollup \u2014 confirmation, sequencing, and availability all as plug-in components."
+      },
+      "icon": "intro",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/intro"
+      }
+    },
+    {
+      "id": "confirmations",
+      "title": "What is Confirmed?",
+      "summary": "HotShot lets rollups confirm transactions with BFT finality in ~10 seconds \u2014 critical for bridges, intent systems, and trustless UX.",
+      "projects": [
+        {
+          "name": "Affogato",
+          "description": "Swap + bridge app across 3 Espresso rollups with instant confirmation and no reorg risk.",
+          "popup": {
+            "title": "Affogato",
+            "content": "Affogato uses Espresso confirmations to safely fulfill swaps across rollups in 10s without centralized preconfirmers."
+          },
+          "tags": [
+            "confirmations"
+          ],
+          "highlight": true,
+          "links": {
+             "github": "https://github.com/haardikk21/affogato",
+             "submission": "https://dorahacks.io/buidl/25277"
+          }
+        },
+        {
+          "name": "Disburse",
+          "description": "Intent-based cross-chain payout system using Espresso rollup for one-click mass payouts.",
+          "popup": {
+            "title": "Disburse",
+            "content": "Disburse relies on fast confirmations to unlock automated and secure DAOs and org payouts."
+          },
+          "tags": [
+            "confirmations"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/DevSwayam/Disburse_network",
+            "submission": "https://dorahacks.io/buidl/25465"
+          }
+        },
+        {
+          "name": "Ca\u00e9r",
+          "description": "Lending protocol with instant confirmation of collateral state across rollups.",
+          "popup": {
+            "title": "Ca\u00e9r",
+            "content": "Combines confirmations with cross-chain lending logic to ensure collateral and liquidity are synchronized."
+          },
+          "tags": [
+            "confirmations"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/ca\u00e9r",
+            "submission": "https://dorahacks.io/buidl/25366"
+          }
+        },
+        {
+          "name": "Brew DAO",
+          "description": "Cross-rollup DeFi protocol for borrowing/lending with confirmed shared state.",
+          "popup": {
+            "title": "Brew DAO",
+            "content": "Enables users to borrow on Rollup A and repay on Rollup B using BFT-anchored state updates."
+          },
+          "tags": [
+            "confirmations"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/brew-dao",
+            "submission": "https://dorahacks.io/buidl/25475"
+          }
+        },
+        {
+          "name": "Tachyon Pe",
+          "description": "Cross-chain payroll and vendor settlement app with near-instant HotShot finality.",
+          "popup": {
+            "title": "Tachyon Pe",
+            "content": "HotShot confirmation enables lightning-fast vendor disbursements across chains."
+          },
+          "tags": [
+            "confirmations"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/Abhi270303/Tachyon/tree/main",
+            "submission": "https://dorahacks.io/buidl/25420"
+          }
+        }
+      ],
+      "icon": "confirmations",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/confirmations"
+      }
+    },
+    {
+      "id": "da",
+      "title": "Bring Your Own DA",
+      "summary": "Espresso doesn\u2019t lock you into its DA \u2014 plug in Celestia, EigenDA, Ethereum, or use Espresso-native availability.",
+      "projects": [
+        {
+          "name": "Affogato",
+          "description": "Uses Arbitrum DA with Espresso confirmations.",
+          "popup": {
+            "title": "Modular DA in Affogato",
+            "content": "Proves Espresso works alongside other DA layers without friction or compromise."
+          },
+          "tags": [
+            "da"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/haardikk21/affogato",
+            "submission": "https://dorahacks.io/buidl/25277"
+          }
+        },
+        {
+          "name": "Disburse",
+          "description": "Native DA + Hyperlane + confirmations = smooth mass distribution infra.",
+          "popup": {
+            "title": "Flexible DA in Disburse",
+            "content": "Mixes native token availability with messaging infra \u2014 modular in action."
+          },
+          "tags": [
+            "da"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/disburse",
+            "submission": "https://dorahacks.io/buidl/25278"
+          }
+        },
+        {
+          "name": "Coffee Chain",
+          "description": "Merchant-friendly L2 using Espresso\u2019s Decaf DA stack.",
+          "popup": {
+            "title": "Coffee Chain",
+            "content": "End-to-end Espresso stack with Decaf for lightweight DA."
+          },
+          "tags": [
+            "da"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/coffee-chain",
+            "submission": "https://dorahacks.io/buidl/25279"
+          }
+        }
+      ],
+      "icon": "da",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/da"
+      }
+    },
+    {
+      "id": "sequencing",
+      "title": "No Gods, Just HotShot",
+      "summary": "Build rollups with shared or app-specific decentralized sequencing using Espresso.",
+      "projects": [
+        {
+          "name": "Ca\u00e9r",
+          "description": "Application-Specific Sequencer (ASS) powers trustless cross-chain lending.",
+          "popup": {
+            "title": "Sequencing in Ca\u00e9r",
+            "content": "A decentralized sequencer coordinates lending flows between chains."
+          },
+          "tags": [
+            "sequencing"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/ca\u00e9r",
+            "submission": "https://dorahacks.io/buidl/25280"
+          }
+        },
+        {
+          "name": "GTXpresso",
+          "description": "Cross-rollup CLOB DEX using Espresso\u2019s shared sequencing layer.",
+          "popup": {
+            "title": "GTXpresso",
+            "content": "A fair-order trading engine using decentralized sequencing and low latency matching."
+          },
+          "tags": [
+            "sequencing"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/gtxpresso",
+            "submission": "https://dorahacks.io/buidl/25281"
+          }
+        },
+        {
+          "name": "Brew DAO",
+          "description": "Composable sequencing for borrowing across chains.",
+          "popup": {
+            "title": "Brew DAO Sequencer",
+            "content": "Synchronizes positions across chains using Espresso block ordering guarantees."
+          },
+          "tags": [
+            "sequencing"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/brew-dao",
+            "submission": "https://dorahacks.io/buidl/25282"
+          }
+        }
+      ],
+      "icon": "sequencing",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/sequencing"
+      }
+    },
+    {
+      "id": "fullstack",
+      "title": "Fully Espresso-Powered",
+      "summary": "These projects went all-in. Confirmation + sequencing + DA = Caffeinated Chains.",
+      "projects": [
+        {
+          "name": "Affogato Rollups",
+          "description": "Tall / Grande / Venti \u2014 full Espresso Orbit L3s.",
+          "popup": {
+            "title": "Affogato Rollups",
+            "content": "Showcase of multi-rollup Espresso-native apps with full modular stack."
+          },
+          "tags": [
+            "fullstack"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/affogato-rollups",
+            "submission": "https://dorahacks.io/buidl/25283"
+          } 
+        },
+        {
+          "name": "Coffee Chain",
+          "description": "Decaf-powered payments on an Espresso rollup.",
+          "popup": {
+            "title": "Coffee Chain",
+            "content": "Any token \u2192 preferred token, across rollups, on Espresso infra."
+          },
+          "tags": [
+            "fullstack"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/coffee-chain",
+            "submission": "https://dorahacks.io/buidl/25284"
+          }
+        },
+        {
+          "name": "GTXpresso",
+          "description": "Trading infra fully deployed on an Espresso-powered L3.",
+          "popup": {
+            "title": "GTXpresso",
+            "content": "All trading, sequencing, and confirmation done on Espresso rails."
+          },
+          "tags": [
+            "fullstack"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/gtxpresso",
+            "submission": "https://dorahacks.io/buidl/25285"
+          }
+        },
+        {
+          "name": "Fireball",
+          "description": "AI + DEX on Espresso with Uniswap-like strategy testing.",
+          "popup": {
+            "title": "Fireball",
+            "content": "Built for simulation, strategy, and testing on caffeinated infra."
+          },
+          "tags": [
+            "fullstack"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/fireball",
+            "submission": "https://dorahacks.io/buidl/25286"
+          } 
+        },
+        {
+          "name": "Buy Me An Espresso",
+          "description": "Cross-chain tipping app using intent infra + Espresso.",
+          "popup": {
+            "title": "Buy Me An Espresso",
+            "content": "Rollup-native tipping powered by the Espresso confirmation + sequencing pipeline."
+          },
+          "tags": [
+            "fullstack"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/buy-me-an-espresso",
+            "submission": "https://dorahacks.io/buidl/25287"
+          }
+        }
+      ],
+      "icon": "fullstack",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/fullstack"
+      }
+    },
+    {
+      "id": "interop",
+      "title": "Composability Unchained",
+      "summary": "Composable state, cross-rollup logic, and confirmation reuse \u2014 finally done right.",
+      "projects": [
+        {
+          "name": "Brew DAO",
+          "description": "Borrow here, repay there \u2014 unified position logic across rollups.",
+          "popup": {
+            "title": "Brew DAO Interop",
+            "content": "Using Espresso confirmations as canonical truth for DeFi state."
+          },
+          "tags": [
+            "interop"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/brew-dao",
+            "notion": "https://notion.so/Brew-DAO-project"
+          }
+        },
+        {
+          "name": "Caramel Swap",
+          "description": "Intent-based swap engine with cross-rollup state validation.",
+          "popup": {
+            "title": "Caramel Swap",
+            "content": "Verifies rollup liveness and correctness with Espresso block confirmations."
+          },
+          "tags": [
+            "interop"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/caramel-swap",
+            "submission": "https://dorahacks.io/buidl/25288"
+          } 
+        },
+        {
+          "name": "GTXpresso",
+          "description": "Order matching across chains using shared sequencing infra.",
+          "popup": {
+            "title": "GTXpresso Interop",
+            "content": "Executes trades across rollups with zero compromise."
+          },
+          "tags": [
+            "interop"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/gtxpresso",
+            "submission": "https://dorahacks.io/buidl/25289"
+          }
+        },
+        {
+          "name": "Affogato",
+          "description": "Uses global confirmations to power cross-chain intents and rebalancing.",
+          "popup": {
+            "title": "Affogato Interop",
+            "content": "Unifying intent flows and inventory routing with Espresso BFT state."
+          },
+          "tags": [
+            "interop"
+          ],
+          "highlight": true,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/affogato",
+            "submission": "https://dorahacks.io/buidl/25290"
+          }
+        }
+      ],
+      "icon": "interop",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/interop"
+      }
+    },
+    {
+      "id": "extras",
+      "title": "Utilities & Extras",
+      "summary": "Smaller projects that stretch Espresso\u2019s reach across UX, identity, and analytics.",
+      "projects": [
+        {
+          "name": "Espresso Name Service (.esp)",
+          "description": "Human-readable rollup-native usernames.",
+          "popup": {
+            "title": ".esp Domains",
+            "content": "Simplify your rollup identity with readable tags like sethu.esp"
+          },
+          "tags": [
+            "extras"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/espresso-name-service-(.esp)",
+            "submission": "https://dorahacks.io/buidl/25291"
+          }
+        },
+        {
+          "name": "Rollup Metrics Tracker",
+          "description": "Dashboard for tracking rollup activity on Espresso chains.",
+          "popup": {
+            "title": "Espresso Metrics",
+            "content": "Track transaction throughput, contracts deployed, and node status."
+          },
+          "tags": [
+            "extras"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/rollup-metrics-tracker",
+            "submission": "https://dorahacks.io/buidl/25292"
+          }
+        },
+        {
+          "name": "Americano Labs",
+          "description": "AI-based DeFi strategy suggester with risk profiling.",
+          "popup": {
+            "title": "Americano Labs",
+            "content": "The coffee-powered Clippy for DeFi \u2014 AI helps find the best yield route."
+          },
+          "tags": [
+            "extras"
+          ],
+          "highlight": false,
+          "links": {
+            "github": "https://github.com/espresso-hackathon/americano-labs",
+            "submission": "https://dorahacks.io/buidl/25293"
+          }
+        }
+      ],
+      "icon": "extras",
+      "cta": {
+        "buttonText": "Learn More",
+        "link": "/docs/espresso/extras"
+      }
+    }
+  ]
+}
