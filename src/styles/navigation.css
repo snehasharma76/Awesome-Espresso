@@ -105,7 +105,7 @@
 .roadmap-nav-text {
   position: relative;
   font-weight: bold;
-  font-size: calc(0.8rem + 5px);
+  font-size: 1rem;
   letter-spacing: 0.3px;
 }
 

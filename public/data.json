@@ -20,7 +20,7 @@
       "icon": "intro",
       "cta": {
         "buttonText": "Learn More",
-        "link": "/docs/espresso/intro"
+        "link": "https://docs.espressosys.com/network"
       }
     },
     {
@@ -445,7 +445,7 @@
       "icon": "extras",
       "cta": {
         "buttonText": "Learn More",
-        "link": "/docs/espresso/extras"
+        "link": "https://docs.espressosys.com/"
       }
     }
   ]

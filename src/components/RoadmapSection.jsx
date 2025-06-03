@@ -155,7 +155,7 @@ const RoadmapSection = ({ section, index, nextSection }) => {
             className="roadmap-cta"
             variants={itemVariants}
           >
-            <a href={section.cta.link || "https://www.espressosys.com/"} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href={section.cta.link && section.cta.link.startsWith('http') ? section.cta.link : "https://docs.espressosys.com"} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               {section.cta.buttonText || "Get Started"} <FaArrowRight className="btn-icon" />
             </a>
           </motion.div>
