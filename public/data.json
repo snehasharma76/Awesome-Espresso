@@ -398,7 +398,7 @@
           "description": "Human-readable rollup-native usernames.",
           "popup": {
             "title": ".esp Domains",
-            "content": "Simplify your rollup identity with readable tags like sethu.esp"
+            "content": "Simplify your rollup identity with readable tags like audaciousSneha.esp"
           },
           "tags": [
             "extras"
